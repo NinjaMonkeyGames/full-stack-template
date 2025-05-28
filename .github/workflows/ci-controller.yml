@@ -7,10 +7,12 @@ name: CI Controller
 on:
   push:
     branches:
-      - '**'
+      - feature/*
   pull_request:
     branches:
-      - '**'
+      - develop
+      - release/*
+      - master
   workflow_dispatch:
 
 permissions:
@@ -26,12 +28,21 @@ jobs:
         run: |
           BRANCH_NAME="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
           BASE_BRANCH="${GITHUB_BASE_REF}"
+          EVENT_NAME="${{ github.event_name }}"
 
+          echo "Event: $EVENT_NAME"
           echo "Branch: $BRANCH_NAME"
           echo "Base Branch: $BASE_BRANCH"
-          echo "Event: ${{ github.event_name }}"
 
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+          if [[ "$EVENT_NAME" == "push" ]]; then
+            # Only feature/* branches are allowed to push
+            if [[ "$BRANCH_NAME" == feature/* ]]; then
+              echo "Environment: development"
+            else
+              echo "❌ Direct pushes to $BRANCH_NAME are not allowed."
+              exit 1
+            fi
+          elif [[ "$EVENT_NAME" == "pull_request" ]]; then
             if [[ "$BRANCH_NAME" == feature/* && "$BASE_BRANCH" == "develop" ]]; then
               echo "Environment: staging"
             elif [[ "$BRANCH_NAME" == develop && "$BASE_BRANCH" == release/* ]]; then
@@ -39,15 +50,10 @@ jobs:
             elif [[ "$BRANCH_NAME" == release/* && "$BASE_BRANCH" == master ]]; then
               echo "Environment: production"
             else
-              echo "Environment: invalid PR flow"
+              echo "Environment: unknown or invalid PR target"
+              exit 1
             fi
           else
-            if [[ "$BRANCH_NAME" == feature/* ]]; then
-              echo "Environment: development"
-            elif [[ "$BRANCH_NAME" == "develop" || "$BRANCH_NAME" == release/* || "$BRANCH_NAME" == "master" ]]; then
-              echo "❌ Direct pushes to $BRANCH_NAME are not allowed. Use a PR."
-              exit 1
-            else
-              echo "Environment: unknown branch pattern"
-            fi
+            echo "Unhandled event type: $EVENT_NAME"
+            exit 1
           fi
