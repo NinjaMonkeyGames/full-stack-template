@@ -19,53 +19,19 @@ permissions:
 jobs:
   detect-environment:
     runs-on: ubuntu-latest
-    outputs:
-      env: ${{ steps.setenv.outputs.env }}
     steps:
-      - name: Determine Environment
-        id: setenv
+      - name: Determine and Echo Environment
         run: |
           BRANCH_NAME="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
-
           echo "Branch: $BRANCH_NAME"
 
           if [[ "$BRANCH_NAME" == "master" ]]; then
-            echo "env=production" >> "$GITHUB_OUTPUT"
+            echo "Environment: production"
           elif [[ "$BRANCH_NAME" == "develop" ]]; then
-            echo "env=staging" >> "$GITHUB_OUTPUT"
+            echo "Environment: staging"
+            echo "Environment: release"
           elif [[ "$BRANCH_NAME" == release/* ]]; then
-            echo "env=release" >> "$GITHUB_OUTPUT"
+            echo "Environment: release"
           else
-            echo "env=development" >> "$GITHUB_OUTPUT"
+            echo "Environment: development"
           fi
-
-  call-development:
-    if: needs.detect-environment.outputs.env == 'development'
-    needs: detect-environment
-    uses: ./.github/workflows/development.yml
-    with:
-      environment_name: development
-
-  call-staging:
-    if: needs.detect-environment.outputs.env == 'staging'
-    needs: detect-environment
-    uses: ./.github/workflows/staging.yml
-    with:
-      environment_name: staging
-
-  call-release:
-    if: needs.detect-environment.outputs.env == 'release'
-    needs: detect-environment
-    uses: ./.github/workflows/release.yml
-    with:
-      environment_name: release
-
-  call-production:
-    if: needs.detect-environment.outputs.env == 'production'
-    needs: detect-environment
-    uses: ./.github/workflows/production.yml
-    with:
-      environment_name: production
-    secrets:
-      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
