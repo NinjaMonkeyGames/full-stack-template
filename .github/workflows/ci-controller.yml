@@ -29,27 +29,25 @@ jobs:
 
           echo "Branch: $BRANCH_NAME"
           echo "Base Branch: $BASE_BRANCH"
+          echo "Event: ${{ github.event_name }}"
 
-          # Pull Request scenarios
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
             if [[ "$BRANCH_NAME" == feature/* && "$BASE_BRANCH" == "develop" ]]; then
               echo "Environment: staging"
-            elif [[ "$BRANCH_NAME" == release/* && "$BASE_BRANCH" == "master" ]]; then
+            elif [[ "$BRANCH_NAME" == develop && "$BASE_BRANCH" == release/* ]]; then
+              echo "Environment: release"
+            elif [[ "$BRANCH_NAME" == release/* && "$BASE_BRANCH" == master ]]; then
               echo "Environment: production"
             else
-              echo "Environment: pull_request_other"
+              echo "Environment: invalid PR flow"
             fi
-
-          # Push scenarios
           else
-            if [[ "$BRANCH_NAME" == "master" ]]; then
-              echo "Environment: production"
-            elif [[ "$BRANCH_NAME" == "develop" ]]; then
-              echo "Environment: staging"
-              echo "Environment: release"
-            elif [[ "$BRANCH_NAME" == release/* ]]; then
-              echo "Environment: release"
-            else
+            if [[ "$BRANCH_NAME" == feature/* ]]; then
               echo "Environment: development"
+            elif [[ "$BRANCH_NAME" == "develop" || "$BRANCH_NAME" == release/* || "$BRANCH_NAME" == "master" ]]; then
+              echo "❌ Direct pushes to $BRANCH_NAME are not allowed. Use a PR."
+              exit 1
+            else
+              echo "Environment: unknown branch pattern"
             fi
           fi
