@@ -9,6 +9,8 @@ on:
     branches:
       - '**'
   pull_request:
+    branches:
+      - '**'
   workflow_dispatch:
 
 permissions:
@@ -20,18 +22,34 @@ jobs:
   detect-environment:
     runs-on: ubuntu-latest
     steps:
-      - name: Determine and Echo Environment
+      - name: Detect Environment and Echo
         run: |
           BRANCH_NAME="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
-          echo "Branch: $BRANCH_NAME"
+          BASE_BRANCH="${GITHUB_BASE_REF}"
 
-          if [[ "$BRANCH_NAME" == "master" ]]; then
-            echo "Environment: production"
-          elif [[ "$BRANCH_NAME" == "develop" ]]; then
-            echo "Environment: staging"
-            echo "Environment: release"
-          elif [[ "$BRANCH_NAME" == release/* ]]; then
-            echo "Environment: release"
+          echo "Branch: $BRANCH_NAME"
+          echo "Base Branch: $BASE_BRANCH"
+
+          # Pull Request scenarios
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            if [[ "$BRANCH_NAME" == feature/* && "$BASE_BRANCH" == "develop" ]]; then
+              echo "Environment: staging"
+            elif [[ "$BRANCH_NAME" == release/* && "$BASE_BRANCH" == "master" ]]; then
+              echo "Environment: production"
+            else
+              echo "Environment: pull_request_other"
+            fi
+
+          # Push scenarios
           else
-            echo "Environment: development"
+            if [[ "$BRANCH_NAME" == "master" ]]; then
+              echo "Environment: production"
+            elif [[ "$BRANCH_NAME" == "develop" ]]; then
+              echo "Environment: staging"
+              echo "Environment: release"
+            elif [[ "$BRANCH_NAME" == release/* ]]; then
+              echo "Environment: release"
+            else
+              echo "Environment: development"
+            fi
           fi
