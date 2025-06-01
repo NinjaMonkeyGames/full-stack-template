@@ -1,3 +1,13 @@
+## 1.0.0-beta.5 (2025-06-01)
+
+* Merge branch 'release' into develop ([c079293da939bdd4f37841500ceb205fcc0d3ca3](https://github.com/NinjaMonkeyGames/full-stack-template/commit/c079293da939bdd4f37841500ceb205fcc0d3ca3))
+* fix(config): updated controller ci (#15) ([f84807c1905af690f6ce94da69169617a559b988](https://github.com/NinjaMonkeyGames/full-stack-template/commit/f84807c1905af690f6ce94da69169617a559b988)), closes [#15](https://github.com/NinjaMonkeyGames/full-stack-template/issues/15) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+
+
+### Details
+
+* Signed-off-by: Daniel Mallett <daniel.mallett@ninjamonkeygames.com>
+
 ## 1.0.0-beta.3 (2025-06-01)
 
 * fix(config): updated controller ci (#14) ([8bdd133422f3b9cdff69dbdc5b7aa4ad7672018f](https://github.com/NinjaMonkeyGames/full-stack-template/commit/8bdd133422f3b9cdff69dbdc5b7aa4ad7672018f)), closes [#14](https://github.com/NinjaMonkeyGames/full-stack-template/issues/14) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
