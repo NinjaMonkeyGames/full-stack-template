@@ -1,22 +1,14 @@
 export default {
   branches: [
-    // Production releases
     'master',
-
-    // Staging (prerelease: 'beta')
     {
       name: 'develop',
       prerelease: 'beta',
     },
-
-    // Release candidates (prerelease: 'rc')
     {
       name: 'release',
       prerelease: 'rc',
     },
-
-    // Optional: prevent semantic-release from trying to release feature branches
-    // You can omit this; semantic-release will ignore them unless explicitly matched
   ],
   plugins: [
     '@semantic-release/commit-analyzer',
@@ -53,6 +45,12 @@ export default {
       },
     ],
     '@semantic-release/changelog',
-    '@semantic-release/git',
+    [
+      '@semantic-release/git',
+      {
+        assets: ['package.json', 'CHANGELOG.md'],
+        message: 'chore(release): ${nextRelease.version} [skip ci]',
+      },
+    ],
   ],
 };
