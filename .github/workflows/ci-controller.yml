@@ -60,33 +60,33 @@ jobs:
             exit 1
           fi
 
-            call-development:
-            if: needs.detect-environment.outputs.env == 'development'
-            needs: detect-environment
-            uses: ./.github/workflows/development.yml
-            with:
-              environment_name: development
+  call-development:
+    if: needs.detect-environment.outputs.env == 'development'
+    needs: detect-environment
+    uses: ./.github/workflows/development.yml
+    with:
+      environment_name: development
 
-          call-staging:
-            if: needs.detect-environment.outputs.env == 'staging'
-            needs: detect-environment
-            uses: ./.github/workflows/staging.yml
-            with:
-              environment_name: staging
+  call-staging:
+    if: needs.detect-environment.outputs.env == 'staging'
+    needs: detect-environment
+    uses: ./.github/workflows/staging.yml
+    with:
+      environment_name: staging
 
-          call-release:
-            if: needs.detect-environment.outputs.env == 'release'
-            needs: detect-environment
-            uses: ./.github/workflows/release.yml
-            with:
-              environment_name: release
+  call-release:
+    if: needs.detect-environment.outputs.env == 'release'
+    needs: detect-environment
+    uses: ./.github/workflows/release.yml
+    with:
+      environment_name: release
 
-          call-production:
-            if: needs.detect-environment.outputs.env == 'production'
-            needs: detect-environment
-            uses: ./.github/workflows/production.yml
-            with:
-              environment_name: production
-            secrets:
-              DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-              DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+  call-production:
+    if: needs.detect-environment.outputs.env == 'production'
+    needs: detect-environment
+    uses: ./.github/workflows/production.yml
+    with:
+      environment_name: production
+    secrets:
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
