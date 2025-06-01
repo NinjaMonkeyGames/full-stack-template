@@ -22,7 +22,7 @@ jobs:
     outputs:
       env: ${{ steps.setenv.outputs.env }}
     steps:
-            - name: Detect Environment and Set Output
+      - name: Detect Environment and Set Output
         id: setenv
         run: |
           BRANCH_NAME="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
@@ -59,6 +59,8 @@ jobs:
             echo "❌ Unhandled event type: $EVENT_NAME"
             exit 1
           fi
+
+
   call-development:
     if: needs.detect-environment.outputs.env == 'development'
     needs: detect-environment
