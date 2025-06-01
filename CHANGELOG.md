@@ -1,3 +1,15 @@
+## 1.0.0-beta.2 (2025-06-01)
+
+* fix(config): updated controller ci (#13) ([66b1a5a12fa6664ebe31201e21b370e0585cb3bf](https://github.com/NinjaMonkeyGames/full-stack-template/commit/66b1a5a12fa6664ebe31201e21b370e0585cb3bf)), closes [#13](https://github.com/NinjaMonkeyGames/full-stack-template/issues/13) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+
+
+### Details
+
+* * feat(core): add initial project setup
+
+This commit introduces the initial setup for the project,
+including configuration files and base structure.
+
 ## 1.0.0-beta.1 (2025-06-01)
 
 * fix(config): updated controller ci (#11) ([4b0669c941e18c156d2104760f67fbcc1e23fca3](https://github.com/NinjaMonkeyGames/full-stack-template/commit/4b0669c941e18c156d2104760f67fbcc1e23fca3)), closes [#11](https://github.com/NinjaMonkeyGames/full-stack-template/issues/11) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
