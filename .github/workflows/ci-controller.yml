@@ -22,7 +22,7 @@ jobs:
     outputs:
       env: ${{ steps.setenv.outputs.env }}
     steps:
-      - name: Detect Environment and Set Output
+            - name: Detect Environment and Set Output
         id: setenv
         run: |
           BRANCH_NAME="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
@@ -36,6 +36,7 @@ jobs:
           if [[ "$EVENT_NAME" == "push" ]]; then
             if [[ "$BRANCH_NAME" == feature/* ]]; then
               echo "env=development" >> "$GITHUB_OUTPUT"
+              echo "✅ Detected environment: development"
             else
               echo "❌ Direct pushes to $BRANCH_NAME are not allowed."
               exit 1
@@ -43,10 +44,13 @@ jobs:
           elif [[ "$EVENT_NAME" == "pull_request" ]]; then
             if [[ "$BRANCH_NAME" == feature/* && "$BASE_BRANCH" == "develop" ]]; then
               echo "env=staging" >> "$GITHUB_OUTPUT"
+              echo "✅ Detected environment: staging"
             elif [[ "$BRANCH_NAME" == "develop" && "$BASE_BRANCH" == release/* ]]; then
               echo "env=release" >> "$GITHUB_OUTPUT"
+              echo "✅ Detected environment: release"
             elif [[ "$BRANCH_NAME" == release/* && "$BASE_BRANCH" == "master" ]]; then
               echo "env=production" >> "$GITHUB_OUTPUT"
+              echo "✅ Detected environment: production"
             else
               echo "❌ Environment: unknown or invalid PR target"
               exit 1
@@ -55,7 +59,6 @@ jobs:
             echo "❌ Unhandled event type: $EVENT_NAME"
             exit 1
           fi
-
   call-development:
     if: needs.detect-environment.outputs.env == 'development'
     needs: detect-environment
