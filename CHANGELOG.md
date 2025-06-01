@@ -1,3 +1,18 @@
+## 1.0.0-beta.7 (2025-06-01)
+
+* feat(core): updated controller ci (#19) ([35fb6c694a5a07ff5d1ef7bdd3a3132067df2adb](https://github.com/NinjaMonkeyGames/full-stack-template/commit/35fb6c694a5a07ff5d1ef7bdd3a3132067df2adb)), closes [#19](https://github.com/NinjaMonkeyGames/full-stack-template/issues/19) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+* Merge branch 'release' into develop ([bea39ebcedbe240651955943891f05fba7e59f7c](https://github.com/NinjaMonkeyGames/full-stack-template/commit/bea39ebcedbe240651955943891f05fba7e59f7c))
+* merge to release bump test (#16) ([08fa6428f470ea162f2caad475e94634ff6d9861](https://github.com/NinjaMonkeyGames/full-stack-template/commit/08fa6428f470ea162f2caad475e94634ff6d9861)), closes [#16](https://github.com/NinjaMonkeyGames/full-stack-template/issues/16) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+
+
+### Details
+
+* * feat(core): add initial project setup
+
+This commit introduces the initial setup for the project,
+including configuration files and base structure.
+* Signed-off-by: Daniel Mallett <daniel.mallett@ninjamonkeygames.com>
+
 ## 1.0.0-beta.5 (2025-06-01)
 
 * Merge branch 'release' into develop ([c079293da939bdd4f37841500ceb205fcc0d3ca3](https://github.com/NinjaMonkeyGames/full-stack-template/commit/c079293da939bdd4f37841500ceb205fcc0d3ca3))
