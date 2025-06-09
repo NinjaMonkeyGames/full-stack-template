@@ -20,7 +20,7 @@
     "globals": "^16.0.0",
     "markdownlint-cli": "^0.45.0",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.31.0"
+    "typescript-eslint": "^8.33.1"
   },
   "scripts": {
     "lint": "markdownlint **/*.md"
