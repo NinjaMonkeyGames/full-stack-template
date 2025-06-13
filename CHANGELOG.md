@@ -1,3 +1,43 @@
+## 1.0.0 (2025-06-13)
+
+* feat(core): add initial project setup (#1) (#2) (#3) ([f35d5a5e3e96a8910b65ae8b40a406875b57a521](https://github.com/NinjaMonkeyGames/full-stack-template/commit/f35d5a5e3e96a8910b65ae8b40a406875b57a521)), closes [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#2](https://github.com/NinjaMonkeyGames/full-stack-template/issues/2) [#3](https://github.com/NinjaMonkeyGames/full-stack-template/issues/3) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+* feat(core): updated controller ci ([492e830ecdb10db33cab51ebf9da77802e5cce51](https://github.com/NinjaMonkeyGames/full-stack-template/commit/492e830ecdb10db33cab51ebf9da77802e5cce51)), closes [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+* feat(core): updated controller ci (#21) ([cb820f270f44b7f8d8c02dc0e1ce274b462a1cee](https://github.com/NinjaMonkeyGames/full-stack-template/commit/cb820f270f44b7f8d8c02dc0e1ce274b462a1cee)), closes [#21](https://github.com/NinjaMonkeyGames/full-stack-template/issues/21) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#2](https://github.com/NinjaMonkeyGames/full-stack-template/issues/2) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+* feat(core): updated controller ci (#26) ([091ba1c70e1743ec8f3d7051c94d30224c1d810f](https://github.com/NinjaMonkeyGames/full-stack-template/commit/091ba1c70e1743ec8f3d7051c94d30224c1d810f)), closes [#26](https://github.com/NinjaMonkeyGames/full-stack-template/issues/26) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+* build(deps-dev): Bump @eslint/js from 9.27.0 to 9.28.0 (#25) ([0b0623e25330fc76d1ad8f5e4acef0f834890fab](https://github.com/NinjaMonkeyGames/full-stack-template/commit/0b0623e25330fc76d1ad8f5e4acef0f834890fab)), closes [#25](https://github.com/NinjaMonkeyGames/full-stack-template/issues/25)
+* build(deps-dev): Bump cspell from 8.19.4 to 9.0.2 (#24) ([baceedba1b9072b7ecaa8d4b88cf348330cba5d7](https://github.com/NinjaMonkeyGames/full-stack-template/commit/baceedba1b9072b7ecaa8d4b88cf348330cba5d7)), closes [#24](https://github.com/NinjaMonkeyGames/full-stack-template/issues/24)
+* build(deps-dev): Bump eslint from 9.27.0 to 9.28.0 (#22) ([7fdd68b9e54e8fcd7c142d2b4afb992d1b69dcf9](https://github.com/NinjaMonkeyGames/full-stack-template/commit/7fdd68b9e54e8fcd7c142d2b4afb992d1b69dcf9)), closes [#22](https://github.com/NinjaMonkeyGames/full-stack-template/issues/22)
+* build(deps-dev): Bump markdownlint-cli from 0.44.0 to 0.45.0 (#23) ([7ee0550e8a83c9b141e44aa4845036094be5f4a4](https://github.com/NinjaMonkeyGames/full-stack-template/commit/7ee0550e8a83c9b141e44aa4845036094be5f4a4)), closes [#23](https://github.com/NinjaMonkeyGames/full-stack-template/issues/23)
+* Initial commit ([68d8d38a96b2fc0b8b140a312cc794a74562ba3d](https://github.com/NinjaMonkeyGames/full-stack-template/commit/68d8d38a96b2fc0b8b140a312cc794a74562ba3d))
+
+
+### Details
+
+* * feat(core): add initial project setup
+
+This commit introduces the initial setup for the project,
+including configuration files and base structure.
+* * feat(core): add initial project setup
+
+This commit introduces the initial setup for the project,
+including configuration files and base structure.
+* Bumps [@eslint/js](https://github.com/eslint/eslint/tree/HEAD/packages/js) from 9.27.0 to 9.28.0.
+- [Release notes](https://github.com/eslint/eslint/releases)
+- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/eslint/eslint/commits/v9.28.0/packages/js)
+* Bumps [cspell](https://github.com/streetsidesoftware/cspell/tree/HEAD/packages/cspell) from 8.19.4 to 9.0.2.
+- [Release notes](https://github.com/streetsidesoftware/cspell/releases)
+- [Changelog](https://github.com/streetsidesoftware/cspell/blob/main/packages/cspell/CHANGELOG.md)
+- [Commits](https://github.com/streetsidesoftware/cspell/commits/v9.0.2/packages/cspell)
+* Bumps [eslint](https://github.com/eslint/eslint) from 9.27.0 to 9.28.0.
+- [Release notes](https://github.com/eslint/eslint/releases)
+- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/eslint/eslint/compare/v9.27.0...v9.28.0)
+* Bumps [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) from 0.44.0 to 0.45.0.
+- [Release notes](https://github.com/igorshubovych/markdownlint-cli/releases)
+- [Commits](https://github.com/igorshubovych/markdownlint-cli/compare/v0.44.0...v0.45.0)
+* Checking bump version
+
 ## 1.0.0-beta.7 (2025-06-01)
 
 * feat(core): updated controller ci (#19) ([35fb6c694a5a07ff5d1ef7bdd3a3132067df2adb](https://github.com/NinjaMonkeyGames/full-stack-template/commit/35fb6c694a5a07ff5d1ef7bdd3a3132067df2adb)), closes [#19](https://github.com/NinjaMonkeyGames/full-stack-template/issues/19) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
