@@ -44,13 +44,3 @@ jobs:
     uses: ./.github/workflows/bump-version.yml
     with:
       environment_name: ${{ inputs.environment_name }}
-
-  call-build-docker:
-    name: Build Docker Image
-    needs: call-bump-version
-    uses: ./.github/workflows/build-docker.yml
-    with:
-      environment_name: ${{ inputs.environment_name }}
-    secrets:
-      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
