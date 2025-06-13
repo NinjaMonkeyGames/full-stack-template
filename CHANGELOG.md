@@ -1,3 +1,22 @@
+## 1.1.0 (2025-06-13)
+
+* feat(core): updated controller ci ([816da1d67076f3b5223c890e3a6757aa08feeb90](https://github.com/NinjaMonkeyGames/full-stack-template/commit/816da1d67076f3b5223c890e3a6757aa08feeb90)), closes [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+* build(deps-dev): Bump @typescript-eslint/parser from 8.33.0 to 8.33.1 (#29) ([0d3a04d49db9b66db3a79ec7dc148917194eeb11](https://github.com/NinjaMonkeyGames/full-stack-template/commit/0d3a04d49db9b66db3a79ec7dc148917194eeb11)), closes [#29](https://github.com/NinjaMonkeyGames/full-stack-template/issues/29)
+* build(deps-dev): Bump typescript-eslint from 8.33.0 to 8.33.1 (#28) ([a8e2e6bf0dbedafc6eff03c573565d5e080609bb](https://github.com/NinjaMonkeyGames/full-stack-template/commit/a8e2e6bf0dbedafc6eff03c573565d5e080609bb)), closes [#28](https://github.com/NinjaMonkeyGames/full-stack-template/issues/28)
+
+
+### Details
+
+* Bumps [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) from 8.33.0 to 8.33.1.
+- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)
+- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)
+- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.33.1/packages/parser)
+* Bumps [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/typescript-eslint) from 8.33.0 to 8.33.1.
+- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)
+- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/typescript-eslint/CHANGELOG.md)
+- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.33.1/packages/typescript-eslint)
+* Checking bump version
+
 ## 1.0.0 (2025-06-13)
 
 * feat(core): add initial project setup (#1) (#2) (#3) ([f35d5a5e3e96a8910b65ae8b40a406875b57a521](https://github.com/NinjaMonkeyGames/full-stack-template/commit/f35d5a5e3e96a8910b65ae8b40a406875b57a521)), closes [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#2](https://github.com/NinjaMonkeyGames/full-stack-template/issues/2) [#3](https://github.com/NinjaMonkeyGames/full-stack-template/issues/3) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1) [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
