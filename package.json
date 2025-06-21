@@ -1,6 +1,6 @@
 {
   "name": "full-stack-development-workflow-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CI/CD workflow template for full-stack development projects",
   "type": "module",
   "devDependencies": {
