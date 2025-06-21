@@ -1,3 +1,17 @@
+## 1.2.0 (2025-06-21)
+
+* feat(core): updated controller ci ([5caa354af5ecaeaa7ef19787b5d3d5bd336b5911](https://github.com/NinjaMonkeyGames/full-stack-template/commit/5caa354af5ecaeaa7ef19787b5d3d5bd336b5911)), closes [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
+* build(deps-dev): Bump @typescript-eslint/eslint-plugin (#27) ([05d04afaeddb2d6d86e5da9a6ddae35a01f9ce89](https://github.com/NinjaMonkeyGames/full-stack-template/commit/05d04afaeddb2d6d86e5da9a6ddae35a01f9ce89)), closes [#27](https://github.com/NinjaMonkeyGames/full-stack-template/issues/27)
+
+
+### Details
+
+* Bumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 8.33.0 to 8.33.1.
+- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)
+- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)
+- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.33.1/packages/eslint-plugin)
+* Checking bump version
+
 ## 1.1.0 (2025-06-13)
 
 * feat(core): updated controller ci ([816da1d67076f3b5223c890e3a6757aa08feeb90](https://github.com/NinjaMonkeyGames/full-stack-template/commit/816da1d67076f3b5223c890e3a6757aa08feeb90)), closes [#1](https://github.com/NinjaMonkeyGames/full-stack-template/issues/1)
