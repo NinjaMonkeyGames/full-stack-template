@@ -46,6 +46,12 @@ export default {
     ],
     '@semantic-release/changelog',
     [
+      '@semantic-release/npm',
+      {
+        npmPublish: false, // Set to true if you want to publish to npm
+      },
+    ],
+    [
       '@semantic-release/git',
       {
         assets: ['package.json', 'CHANGELOG.md'],
